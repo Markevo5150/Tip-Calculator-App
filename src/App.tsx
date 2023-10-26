@@ -1,20 +1,32 @@
 export default function App() {
   return (
     <>
-      <div className="main-container">
-        <div className="upGreen">
-          <span className="title">SPLI</span>
-          <span className="title">TTER</span>
+      <header className="header">
+        <h1 className="header__title">
+          SPLI <br /> TTER
+        </h1>
+      </header>
+      <section className="calculator-container">
+        <div className="inputs-section">
+          <label htmlFor="bill" className="inputs-section__bill-label">
+            Bill
+          </label>
+          <input
+            id="bill"
+            className="inputs-section__bill-input"
+            type="number"
+            value="0"
+          />
+          <fieldset className="btns">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>20%</button>
+            <button>25%</button>
+          </fieldset>
         </div>
-        <div className="downWhite">
-          <h3 className="section">Bill</h3>
-          <input type="text" placeholder=""></input>
-          <h3 className="section">Select Tip %</h3>
-          <h3 className="section">Number of People</h3>
-          <input type="text" name="" id="" />
-          <div className="summary"></div>
-        </div>
-      </div>
+        <div className="results-section"></div>
+      </section>
     </>
   );
 }
