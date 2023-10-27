@@ -18,12 +18,23 @@ export default function App() {
             value="0"
           />
           <fieldset className="btns">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>20%</button>
-            <button>25%</button>
+            <legend className="btns__legend">Select Tip %</legend>
+            <button className="btns__button">5%</button>
+            <button className="btns__button">10%</button>
+            <button className="btns__button btns__button--selected">15%</button>
+            <button className="btns__button">20%</button>
+            <button className="btns__button">25%</button>
+            <input type="number" placeholder="Custom" />
           </fieldset>
+          <label htmlFor="people" className="inputs-section__people-label">
+            Bill
+          </label>
+          <input
+            id="people"
+            className="inputs-section__people-input"
+            type="number"
+            value="5"
+          />
         </div>
         <div className="results-section"></div>
       </section>
