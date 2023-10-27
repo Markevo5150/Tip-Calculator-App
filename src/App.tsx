@@ -36,8 +36,36 @@ export default function App() {
             value="5"
           />
         </div>
-        <div className="results-section"></div>
+        <div className="results-section">
+          <div className="results">
+            <div>
+              <p className="results__tip-amount">Tip Amount</p>
+              <p className="results__tip-person">/ person</p>
+            </div>
+
+            <div>
+              <p className="results__tip-value"></p>
+            </div>
+
+            <div>
+              <p className="results__total--amount">Total</p>
+              <p className="results__total--person">/ person</p>
+            </div>
+
+            <div>
+              <p className="results__total--value">$32.79</p>
+            </div>
+          </div>
+          <button>RESET</button>
+        </div>
       </section>
+      <div class="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="#">Marco Lopez</a>.
+      </div>
     </>
   );
 }
