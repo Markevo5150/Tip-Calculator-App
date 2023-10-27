@@ -16,6 +16,15 @@
 }
 label {
   color: var(--VeryDarkCyan);
+  font-weight: var(--normalFont);
+  font-size: 18px;
+}
+fieldset {
+  border: none;
+}
+.btns__legend {
+  color: var(--VeryDarkCyan);
+  font-size: 18px;
 }
 .calculator-container {
   background-color: var(--White);
