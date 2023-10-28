@@ -15,7 +15,7 @@
 .calculator-container {
   background: var(--White);
   border-radius: 20px;
-  height: 640px;
+  height: 610px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@ label {
 .buttons__legend {
   font-size: 18px;
   color: var(--VeryDarkCyan);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 .row {
   display: flex;
@@ -44,7 +44,7 @@ label {
 }
 
 .buttons {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border: none;
 }
 .buttons__input {
@@ -74,6 +74,7 @@ label {
 }
 .inputs-section__people-label {
   margin-top: -1rem;
+  margin-bottom: 0;
 }
 .error {
   border: 3px solid red;
@@ -124,5 +125,9 @@ label {
   letter-spacing: 3px;
   color: var(--VeryDarkCyan);
   font-weight: var(--normalFont);
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+    background: var(--LightGrayishCyan);
+  }
 }
+/*------------------Desktop View----------------------*/

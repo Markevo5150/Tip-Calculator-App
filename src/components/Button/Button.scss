@@ -16,9 +16,17 @@
 .btn--VeryDarkCyan {
   background: var(--VeryDarkCyan);
   color: var(--White);
+  &:hover {
+    background: var(--LightGrayishCyan);
+    color: var(--VeryDarkCyan);
+  }
 }
 
 .btn--StrongCyan {
   background: var(--StrongCyan);
   color: var(--White);
+  &:hover {
+    background: var(--VeryDarkCyan);
+    color: var(--LightGrayishCyan);
+  }
 }
