@@ -14,7 +14,7 @@
 .calculator-container {
   background: var(--White);
   border-radius: 20px;
-  height: 500px;
+  height: 700px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,8 @@ label {
 .inputs-section__bill-input {
   margin-bottom: 2rem;
   height: 35px;
+  background: var(--LightGrayishCyan);
+  border: none;
 }
 .btns__legend {
   font-size: 18px;
@@ -37,12 +39,16 @@ label {
 }
 .btns {
   margin-bottom: 2rem;
+  border: none;
 }
 .inputs-section__people-input {
   height: 35px;
   margin-bottom: 2rem;
+  background: var(--LightGrayishCyan);
+  border: none;
 }
 .results-section {
   background: var(--VeryDarkCyan);
   border-radius: 20px;
+  height: 370px;
 }
