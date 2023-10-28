@@ -44,14 +44,37 @@ export default function App() {
               value="5"
             />
           </div>
-          div.results-section
-        </div>
-        <div class="attribution">
-          Challenge by{" "}
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-            Frontend Mentor
-          </a>
-          . Coded by <a href="#">Marco Lopez</a>.
+          <div className="results-section">
+            <div>
+              <p className="results-section__tip-amount">Tip Amount</p>
+              <p className="results-section__person-amount">/ person</p>
+            </div>
+
+            <div>
+              <p className="results-section__tip-total"></p>
+            </div>
+
+            <div>
+              <p className="results-section__total-amount">Total</p>
+              <p className="results-section__total person">/ person</p>
+            </div>
+
+            <div>
+              <p className="results-section__total"></p>
+            </div>
+            <button className="resetBtn">RESET</button>
+            <div className="attribution">
+              Challenge by{" "}
+              <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                rel="noopener"
+              >
+                Frontend Mentor
+              </a>
+              . Coded by <a href="#">Marco Lopez</a>.
+            </div>
+          </div>
         </div>
       </div>
     </>
