@@ -75,6 +75,12 @@ label {
 .inputs-section__people-label {
   margin-top: -1rem;
 }
+.error {
+  border: 3px solid red;
+  &::after {
+    content: "";
+  }
+}
 .results-section {
   background: var(--VeryDarkCyan);
   border-radius: 20px;

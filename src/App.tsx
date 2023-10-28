@@ -43,12 +43,13 @@ export default function App() {
               </div>
             </fieldset>
             <label htmlFor="people" className="inputs-section__people-label">
-              Number of people <span className="alert error"></span>
+              Number of people <span className="alert"></span>
             </label>
             <input
               id="people"
               className="inputs-section__people-input"
               type="number"
+              value="5"
             />
           </div>
           <div className="results-section">
