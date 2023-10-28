@@ -1,5 +1,6 @@
+@import "./mixins.scss";
 .main-container {
-  width: 400px;
+  width: 375px;
   margin: 2rem auto;
 }
 .header {
@@ -28,10 +29,7 @@ label {
   color: var(--VeryDarkCyan);
 }
 .inputs-section__bill-input {
-  margin-bottom: 2rem;
-  height: 35px;
-  background: var(--LightGrayishCyan);
-  border: none;
+  @include inputs("../images/icon-dollar.svg");
 }
 .btns__legend {
   font-size: 18px;
@@ -42,10 +40,7 @@ label {
   border: none;
 }
 .inputs-section__people-input {
-  height: 35px;
-  margin-bottom: 2rem;
-  background: var(--LightGrayishCyan);
-  border: none;
+  @include inputs("../images/icon-person.svg");
 }
 .results-section {
   background: var(--VeryDarkCyan);

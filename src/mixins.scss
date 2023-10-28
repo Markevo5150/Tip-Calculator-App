@@ -1,0 +1,26 @@
+@mixin inputs($icon) {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  height: 35px;
+  background-color: var(--LightGrayishCyan);
+  border: none;
+  text-align: right;
+  padding: 10px;
+  caret-color: var(--VeryDarkCyan);
+  border-radius: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+    border: 2px solid var(--VeryDarkCyan);
+  }
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  background: url($icon);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+}
