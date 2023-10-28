@@ -16,7 +16,7 @@
   background: var(--White);
   border-radius: 20px;
   height: 700px;
-  padding: 1rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
 }
@@ -31,13 +31,33 @@ label {
 .inputs-section__bill-input {
   @include inputs("../images/icon-dollar.svg");
 }
-.btns__legend {
+.buttons__legend {
   font-size: 18px;
   color: var(--VeryDarkCyan);
+  margin-bottom: 1rem;
 }
-.btns {
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons {
   margin-bottom: 2rem;
   border: none;
+}
+.buttons__input {
+  height: 40px;
+  width: 150px;
+  background: var(--LightGrayishCyan);
+  border: none;
+  border-radius: 5px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  font-weight: var(--normalFont);
+  font-size: 18px;
+  &::placeholder {
+    color: var(--VeryDarkCyan);
+  }
 }
 .inputs-section__people-input {
   @include inputs("../images/icon-person.svg");

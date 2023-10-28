@@ -1,3 +1,5 @@
+import Button from "./components/Button/Button";
+
 export default function App() {
   return (
     <>
@@ -19,20 +21,26 @@ export default function App() {
               type="number"
               value="0"
             />
-            <fieldset className="btns">
-              <legend className="btns__legend">Select Tip%</legend>
-              <button className="btns__button">5%</button>
-              <button className="btns__button">10%</button>
-              <button className="btns__button btns__button--selected">
-                15%
-              </button>
-              <button className="btns__button">25%</button>
-              <button className="btns__button">50%</button>
-              <input
-                type="number"
-                className="btns__input"
-                placeholder="custom"
-              />
+            <fieldset className="buttons">
+              <legend className="buttons__legend">Select Tip%</legend>
+              <div className="row">
+                <Button type="VeryDarkCyan">5%</Button>
+                <Button type="VeryDarkCyan">10%</Button>
+              </div>
+
+              <div className="row">
+                <Button type="StrongCyan">15%</Button>
+                <Button type="VeryDarkCyan">25%</Button>
+              </div>
+
+              <div className="row">
+                <Button type="VeryDarkCyan">50%</Button>
+                <input
+                  type="number"
+                  className="buttons__input"
+                  placeholder="Custom"
+                />
+              </div>
             </fieldset>
             <label htmlFor="people" className="inputs-section__people-label">
               Number of people
