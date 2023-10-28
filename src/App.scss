@@ -8,10 +8,41 @@
 .calculator__title {
   color: var(--VeryDarkCyan);
   font-size: 23px;
+  margin-bottom: 2rem;
+  letter-spacing: 12px;
 }
 .calculator-container {
   background: var(--White);
   border-radius: 20px;
   height: 500px;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.inputs-section {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 18px;
+  color: var(--VeryDarkCyan);
+}
+.inputs-section__bill-input {
+  margin-bottom: 2rem;
+  height: 35px;
+}
+.btns__legend {
+  font-size: 18px;
+  color: var(--VeryDarkCyan);
+}
+.btns {
+  margin-bottom: 2rem;
+}
+.inputs-section__people-input {
+  height: 35px;
+  margin-bottom: 2rem;
+}
+.results-section {
+  background: var(--VeryDarkCyan);
+  border-radius: 20px;
 }
