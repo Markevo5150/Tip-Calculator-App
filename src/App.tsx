@@ -19,6 +19,7 @@ export default function App() {
               id="bill"
               className="inputs-section__bill-input"
               type="number"
+              value={0}
             />
             <fieldset className="buttons">
               <legend className="buttons__legend">Select Tip %</legend>
@@ -42,7 +43,8 @@ export default function App() {
               </div>
             </fieldset>
             <label htmlFor="people" className="inputs-section__people-label">
-              Number of people
+              Number of people{" "}
+              <span className="alert error">Can't be zero</span>
             </label>
             <input
               id="people"
