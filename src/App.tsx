@@ -19,10 +19,9 @@ export default function App() {
               id="bill"
               className="inputs-section__bill-input"
               type="number"
-              value="0"
             />
             <fieldset className="buttons">
-              <legend className="buttons__legend">Select Tip%</legend>
+              <legend className="buttons__legend">Select Tip %</legend>
               <div className="row">
                 <Button type="VeryDarkCyan">5%</Button>
                 <Button type="VeryDarkCyan">10%</Button>
@@ -49,41 +48,42 @@ export default function App() {
               id="people"
               className="inputs-section__people-input"
               type="number"
-              value="5"
             />
           </div>
           <div className="results-section">
-            <div>
-              <p className="results-section__tip-amount">Tip Amount</p>
-              <p className="results-section__person-amount">/ person</p>
+            <div className="row-results">
+              <div>
+                <p className="results-section__tip-amount">Tip Amount</p>
+                <p className="results-section__person-amount">/ person</p>
+              </div>
+              <div>
+                <p className="results-section__tip-total"></p>
+              </div>
             </div>
 
-            <div>
-              <p className="results-section__tip-total"></p>
-            </div>
-
-            <div>
-              <p className="results-section__total-amount">Total</p>
-              <p className="results-section__total person">/ person</p>
-            </div>
-
-            <div>
-              <p className="results-section__total"></p>
+            <div className="row-results">
+              <div>
+                <p className="results-section__total-amount">Total</p>
+                <p className="results-section__total-person">/ person</p>
+              </div>
+              <div>
+                <p className="results-section__total"></p>
+              </div>
             </div>
             <button className="resetBtn">RESET</button>
-            <div className="attribution">
-              Challenge by{" "}
-              <a
-                href="https://www.frontendmentor.io?ref=challenge"
-                target="_blank"
-                rel="noopener"
-              >
-                Frontend Mentor
-              </a>
-              . Coded by <a href="#">Marco Lopez</a>.
-            </div>
           </div>
         </div>
+      </div>
+      <div className="attribution">
+        Challenge by{" "}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener"
+        >
+          Frontend Mentor
+        </a>
+        . Coded by <a href="#">Marco Lopez</a>.
       </div>
     </>
   );

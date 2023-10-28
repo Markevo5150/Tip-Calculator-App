@@ -26,3 +26,13 @@
     color: var(--LightGrayishCyan);
   }
 }
+
+@mixin whiteP() {
+  color: var(--White);
+  font-size: 16px;
+}
+
+@mixin grayP() {
+  color: var(--LightGrayishCyan);
+  font-size: 12px;
+}
