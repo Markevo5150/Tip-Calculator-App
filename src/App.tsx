@@ -43,8 +43,7 @@ export default function App() {
               </div>
             </fieldset>
             <label htmlFor="people" className="inputs-section__people-label">
-              Number of people{" "}
-              <span className="alert error">Can't be zero</span>
+              Number of people <span className="alert error"></span>
             </label>
             <input
               id="people"
