@@ -59,7 +59,7 @@ export default function App() {
                 <p className="results-section__person-amount">/ person</p>
               </div>
               <div>
-                <p className="results-section__tip-total"></p>
+                <p className="results-section__tip-total">0</p>
               </div>
             </div>
 
@@ -69,7 +69,7 @@ export default function App() {
                 <p className="results-section__total-person">/ person</p>
               </div>
               <div>
-                <p className="results-section__total"></p>
+                <p className="results-section__total">0</p>
               </div>
             </div>
             <button className="resetBtn">RESET</button>

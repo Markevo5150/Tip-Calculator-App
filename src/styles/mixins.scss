@@ -35,6 +35,10 @@
   color: var(--White);
   font-size: 16px;
 }
+@mixin cyanP() {
+  color: var(--StrongCyan);
+  font-size: 16px;
+}
 
 @mixin grayP() {
   color: var(--LightGrayishCyan);

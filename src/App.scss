@@ -97,6 +97,10 @@ label {
 .results-section__tip-amount {
   @include whiteP;
 }
+.results-section__tip-total {
+  @include cyanP;
+  font-size: 25px;
+}
 .results-section__person-amount {
   @include grayP;
 }
@@ -105,6 +109,10 @@ label {
 }
 .results-section__total-person {
   @include grayP;
+}
+.results-section__total {
+  @include cyanP;
+  font-size: 25px;
 }
 .resetBtn {
   margin-bottom: 1rem;
