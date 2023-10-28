@@ -23,24 +23,16 @@ export default function App() {
             />
             <fieldset className="buttons">
               <legend className="buttons__legend">Select Tip %</legend>
-              <div className="row">
-                <Button type="VeryDarkCyan">5%</Button>
-                <Button type="VeryDarkCyan">10%</Button>
-              </div>
-
-              <div className="row">
-                <Button type="StrongCyan">15%</Button>
-                <Button type="VeryDarkCyan">25%</Button>
-              </div>
-
-              <div className="row">
-                <Button type="VeryDarkCyan">50%</Button>
-                <input
-                  type="number"
-                  className="buttons__input"
-                  placeholder="Custom"
-                />
-              </div>
+              <Button type="VeryDarkCyan">5%</Button>
+              <Button type="VeryDarkCyan">10%</Button>
+              <Button type="StrongCyan">15%</Button>
+              <Button type="VeryDarkCyan">25%</Button>
+              <Button type="VeryDarkCyan">50%</Button>
+              <input
+                type="number"
+                className="buttons__input"
+                placeholder="Custom"
+              />
             </fieldset>
             <label htmlFor="people" className="inputs-section__people-label">
               Number of people <span className="alert"></span>

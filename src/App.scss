@@ -15,7 +15,7 @@
 .calculator-container {
   background: var(--White);
   border-radius: 20px;
-  height: 610px;
+  height: 650px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -46,6 +46,8 @@ label {
 .buttons {
   margin-bottom: 1.5rem;
   border: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .buttons__input {
   height: 40px;
@@ -131,4 +133,17 @@ label {
   }
 }
 
-/*------------------Desktop View----------------------*/
+/*------------------ Desktop View ----------------------*/
+@media (min-width: 1440px) {
+  .main-container {
+    width: 1440px;
+  }
+  .inputs-section {
+    display: flex;
+  }
+  .calculator-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
