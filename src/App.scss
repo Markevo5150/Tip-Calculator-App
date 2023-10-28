@@ -1,7 +1,7 @@
 @import "./mixins.scss";
 .main-container {
   width: 375px;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
 }
 .header {
   text-align: center;
@@ -9,13 +9,13 @@
 .calculator__title {
   color: var(--VeryDarkCyan);
   font-size: 23px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   letter-spacing: 12px;
 }
 .calculator-container {
   background: var(--White);
   border-radius: 20px;
-  height: 730px;
+  height: 640px;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -23,11 +23,13 @@
 .inputs-section {
   display: flex;
   flex-direction: column;
+  margin-top: -1rem;
 }
 label {
   font-size: 18px;
   color: var(--VeryDarkCyan);
 }
+
 .inputs-section__bill-input {
   @include inputs("../images/icon-dollar.svg");
 }
@@ -42,7 +44,7 @@ label {
 }
 
 .buttons {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   border: none;
 }
 .buttons__input {
@@ -66,11 +68,14 @@ label {
 .inputs-section__people-input {
   @include inputs("../images/icon-person.svg");
 }
+.inputs-section__people-label {
+  margin-top: -1rem;
+}
 .results-section {
   background: var(--VeryDarkCyan);
   border-radius: 20px;
   /*height: 250px;*/
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1.5rem 1rem 0.3rem 1rem;
   display: flex;
   flex-direction: column;
 }
